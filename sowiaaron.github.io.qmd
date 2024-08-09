@@ -6,6 +6,23 @@ title: "sowiaaron.github.io"
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 
+:::{.callout-note collapse="true"}
+## Ein Quellcode unterschiedliche Formate
+
+Aus der gleichen Datei wird die PDF und die HTML Version erzeugt.
+
+::: {.content-visible when-format="pdf"}
+Dieser Text ist nur in der PDF Version zu sehen und verweist auf die Webseite.
+Der QR Code auf dieser Seite zeigt aktuell noch statisch auf meine Webseite und soll in Zukunft auf die Webseite zum jeweiligen Report oder Buch verweisen.
+
+\begin{pspicture}(4,4)
+\psbarcode[linecolor=blue]{sowiaaron.github.io}{includetext}{qrcode}
+\end{pspicture}
+:::
+
+:::
+
+
 ## Lore Ipsum
 
 

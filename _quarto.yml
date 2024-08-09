@@ -4,4 +4,26 @@ project:
   title: "sowiaaron.github.io"
 
 
+format: 
+  html: 
+    theme: lux
+    toc: true
+    lof: true
+    code-fold: true
+  pdf: 
+    documentclass: scrartcl
+    classoption: 
+      - landscape
+      - twocolumn
+      - a4paper
+    colorlinks: true
+    pdf-enginge: pdflatex
+    header-includes:
+      - \usepackage{pst-barcode} 
+      - \usepackage[babel, german=quotes]{csquotes}
+    keep-tex: true
+    template: reporting.tex
+    
+website:
+  back-to-top-navigation: true
 

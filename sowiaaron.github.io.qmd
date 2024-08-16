@@ -47,17 +47,22 @@ Der QR Code auf dieser Seite zeigt aktuell noch statisch auf meine Webseite und 
 
 :::
 
+\begin{lstlisting}[firstline=2, lastline=5]
+for i:=maxint to 0 do
+begin
+{ do nothing }
+end;
+Write(’Case insensitive ’);
+WritE(’Pascal keywords.’);
+\end{lstlisting}
 
 Aktuell wird der Parameter in r ausgegegeben und in der Latex Umgebung dem Befehl psbarcode übergeben.
-
 
 \begin{lstlisting}
 \begin{pspicture}(4,4) 
 \psbarcode[linecolor=blue]{`{r} params$url`}{includetext}{qrcode} 
 \end{pspicture} 
 \end{lstlisting}
-
-
 
 ## Lore Ipsum
 

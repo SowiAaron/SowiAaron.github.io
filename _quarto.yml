@@ -9,7 +9,12 @@ format:
     theme: lux
     toc: true
     lof: true
+    code-tools: true
     code-fold: true
+    code-annotations: true  
+    code-line-numbers: true
+    code-overflow: wrap
+
   pdf: 
     documentclass: scrartcl
     classoption: 
@@ -21,7 +26,6 @@ format:
     header-includes:
       - \usepackage{pst-barcode} 
       - \usepackage[babel, german=quotes]{csquotes}
-      - \usepackage{showexpl}
     keep-tex: true
     template: reporting.tex
     

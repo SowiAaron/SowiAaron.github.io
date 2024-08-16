@@ -2,9 +2,10 @@
 title: "sowiaaron.github.io"
 params:
   url: "sowiaaron.github.com"
-code-annotations: true  
-code-line-numbers: true
-code-overflow: wrap
+listings: true
+include-in-header:
+  text: | 
+    \lstset{basicstyle=\ttfamily,breaklines=true,frame=single}
 ---
 
 ## Quarto
@@ -49,11 +50,11 @@ Der QR Code auf dieser Seite zeigt aktuell noch statisch auf meine Webseite und 
 
 Aktuell wird der Parameter in r ausgegegeben und in der Latex Umgebung dem Befehl psbarcode übergeben.
 
-\begin{lstlisting}
+```{latex}
 \begin{pspicture}(4,4) 
 \psbarcode[linecolor=blue]{`{r} params$url`}{includetext}{qrcode} 
 \end{pspicture} 
-\end{lstlisting}
+```
 
 ## Lore Ipsum
 

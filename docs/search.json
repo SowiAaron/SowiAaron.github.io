@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "Test.html",
+    "href": "Test.html",
+    "title": "My Document",
+    "section": "",
+    "text": "Test\nR Code:\n\n\nCode\na=c(1,2,3)\n\n\nLatex Code\n\n\nCode\n\\begin{pspicture}(4,4)\n\\psbarcode[linecolor=blue]{`r .QuartoInlineRender(params$url)`}{includetext}{qrcode}\n\\end{pspicture}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsowiaaron.github.io\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+  },
+  {
     "objectID": "sowiaaron.github.io.html",
     "href": "sowiaaron.github.io.html",
     "title": "sowiaaron.github.io",

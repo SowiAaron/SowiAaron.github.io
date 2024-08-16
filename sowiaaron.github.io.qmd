@@ -2,18 +2,20 @@
 title: "sowiaaron.github.io"
 params:
   url: "sowiaaron.github.com"
+code-annotations: true  
+code-line-numbers: true
+code-overflow: wrap
 ---
 
 ## Quarto
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
+Quarto ermöglicht ausführbaren Code und Text zusammen in einem Dokument zu verwalten. Dies wird mit dem Begriff weave bzw. weaving bezeichnet.
+Um mehr darüber und über Quarto zu erlernen schau auf die Website: <https://quarto.org>.
 
 :::{.callout-note collapse="true"}
 ## Ein Quellcode unterschiedliche Formate
 
 Aus der gleichen Datei wird die PDF und die HTML Version erzeugt.
-
 Der Parameter URL wird im YML Header dieses Dokuments mit dem Titel {{< meta title >}}
 
 gesetzt. Und kann nun z. B. in R Syntax verwandt werden.
@@ -22,12 +24,17 @@ gesetzt. Und kann nun z. B. in R Syntax verwandt werden.
 params$url
 ```
 
-Auch sollte über `{{< meta params.url >}}` hier {{< meta params.url >}} die Url stehen. Was nach der Korrektur des Tippfehlers auch klappt.
-
+Über `{{< meta params.url >}}` kann hier der Parameter URL ausgegeben werden {{< meta params.url >}}.
 
 ::: {.content-visible when-format="html"}
-Dieser Text ist nur in der HTML Version zu sehen. In der PDF Variante wird die URL als QR Code an dieser Stelle eingefügt.
+Dieser wird in der PDF Version verwadnt um Ihn z.B in einem QR Code anzuzeigen.
+Dieser Text ist nur in der HTML Version zu sehen. 
+In der PDF Variante wird die URL als QR Code an dieser Stelle eingefügt.
 :::
+
+In der nächsten Version soll der Parameter URL in eine Projektweite Datei `_variables.yml` verschoben werden.
+Dabei soll auch die Behandlung der Parameter beim erzeugen der PDF Version mit Latex geändert werden.
+
 
 ::: {.content-visible when-format="pdf"}
 Dieser Text ist nur in der PDF Version zu sehen und verweist auf die Webseite.
@@ -39,6 +46,17 @@ Der QR Code auf dieser Seite zeigt aktuell noch statisch auf meine Webseite und 
 :::
 
 :::
+
+
+Aktuell wird der Parameter in r ausgegegeben und in der Latex Umgebung dem Befehl psbarcode übergeben.
+
+
+\begin{lstlisting}
+\begin{pspicture}(4,4) 
+\psbarcode[linecolor=blue]{`{r} params$url`}{includetext}{qrcode} 
+\end{pspicture} 
+\end{lstlisting}
+
 
 
 ## Lore Ipsum

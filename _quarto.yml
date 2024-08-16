@@ -21,6 +21,7 @@ format:
     header-includes:
       - \usepackage{pst-barcode} 
       - \usepackage[babel, german=quotes]{csquotes}
+      - \usepackage{showexpl}
     keep-tex: true
     template: reporting.tex
     

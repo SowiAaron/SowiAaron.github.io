@@ -1,15 +1,33 @@
 ---
 title: "sowiaaron.github.io"
+params:
+  url: "sowiaaron.github.com"
 ---
 
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 
+
 :::{.callout-note collapse="true"}
 ## Ein Quellcode unterschiedliche Formate
 
 Aus der gleichen Datei wird die PDF und die HTML Version erzeugt.
+
+Der Parameter URL wird im YML Header dieses Dokuments mit dem Titel {{< meta title >}}
+
+gesetzt. Und kann nun z. B. in R Syntax verwandt werden.
+
+```{r}
+params$url
+```
+
+Auch sollte über `{{< meta param.url >}}` hier {{< meta param.url >}} die Url stehen. Was aber so offensichtlich nicht funktioniert.
+
+
+::: {.content-visible when-format="html"}
+Dieser Text ist nur in der HTML Version zu sehen. In der PDF Variante wird die URL als QR Code an dieser Stelle eingefügt.
+:::
 
 ::: {.content-visible when-format="pdf"}
 Dieser Text ist nur in der PDF Version zu sehen und verweist auf die Webseite.

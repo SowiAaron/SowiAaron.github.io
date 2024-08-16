@@ -377,13 +377,21 @@ $if(csquotes)$
 $endif$
 \usepackage{bookmark}
 
-
-\usepackage{fancyhdr}
+\pagestyle{headings}
+\usepackage{scrlayer-scrpage}
 \usepackage{gitinfo2}
-\fancyfoot[l]{\thepage}
-\fancyfoot[c]{Git-Hash: \gitAbbrevHash }
-%\fancyfoot[r]{ \gitAuthorIsoDate }
-\pagestyle{fancy}
+%\lohead*{Peter Musterheinzel} \rohead*{Seitenstile mit \KOMAScript}
+%\lohead{Peter Musterheinzel} 
+%\rohead{Seitenstile mit \KOMAScript} 
+%\lofoot[Verlag Naseblau, NIrgendwo] {Verlag Naseblau, NIrgendwo}
+\cfoot[Git-Hash: \gitAbbrevHash ] {Git-Hash: \gitAbbrevHash } 
+%\rehead{Peter Musterheinzel} 
+%\lehead{Seitenstile mit \KOMAScript} 
+%\refoot[Verlag Naseblau, Irgendwo] {Verlag Naseblau, Irgendwo} 
+\setkomafont{pageheadfoot}{\small} 
+\setkomafont{pagehead}{\bfseries}
+%\cefoot{Git-Hash: \gitAbbrevHash }
+
 
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs

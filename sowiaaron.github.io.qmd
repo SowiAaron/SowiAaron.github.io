@@ -3,12 +3,11 @@ title: "sowiaaron.github.io"
 params:
   url: "sowiaaron.github.com"
 listings: true
-include-in-header:
-  text: | 
-    \lstset{basicstyle=\ttfamily,breaklines=true,frame=single}
+KOMAoptions:
+  - headings=standardclasses
 ---
 
-## Quarto
+# Quarto
 
 Quarto ermöglicht ausführbaren Code und Text zusammen in einem Dokument zu verwalten. Dies wird mit dem Begriff weave bzw. weaving bezeichnet.
 Um mehr darüber und über Quarto zu erlernen schau auf die Website: <https://quarto.org>.
@@ -17,18 +16,21 @@ Um mehr darüber und über Quarto zu erlernen schau auf die Website: <https://qu
 ## Ein Quellcode unterschiedliche Formate
 
 Aus der gleichen Datei wird die PDF und die HTML Version erzeugt.
-Der Parameter URL wird im YML Header dieses Dokuments mit dem Titel {{< meta title >}}
 
-gesetzt. Und kann nun z. B. in R Syntax verwandt werden.
+Der Parameter URL wird im YML Header dieses Dokuments gesetzt. 
+Parameter wie z.B. der Titel können mit {{{< meta title >}}} ausgegeben bzw. für weitere Zwecke als Variable verwendet werden.
+Der Titel dies Dokuments ist {{< meta title >}} .
+
+Und kann nun z. B. in R Syntax die URL verwandt werden.
 
 ```{r}
 params$url
 ```
 
-Über `{{< meta params.url >}}` kann hier der Parameter URL ausgegeben werden {{< meta params.url >}}.
+Über {{{< meta params.url >}}} kann der Parameter URL auch im Markdown Dokument selbst ausgegeben werden: {{< meta params.url >}}.
 
 ::: {.content-visible when-format="html"}
-Dieser wird in der PDF Version verwadnt um Ihn z.B in einem QR Code anzuzeigen.
+Dieser wird in der PDF Version verwandt um Ihn z.B in einem QR Code anzuzeigen.
 Dieser Text ist nur in der HTML Version zu sehen. 
 In der PDF Variante wird die URL als QR Code an dieser Stelle eingefügt.
 :::
@@ -39,7 +41,7 @@ Dabei soll auch die Behandlung der Parameter beim erzeugen der PDF Version mit L
 
 ::: {.content-visible when-format="pdf"}
 Dieser Text ist nur in der PDF Version zu sehen und verweist auf die Webseite.
-Der QR Code auf dieser Seite zeigt aktuell noch statisch auf meine Webseite und soll in Zukunft auf die Webseite zum jeweiligen Report oder Buch verweisen.
+Der QR Code ~~auf dieser Seite zeigt aktuell noch statisch auf meine Webseite und soll in Zukunft~~ zeigt auf die Webseite zum jeweiligen Report oder Buch die ~~verweisen.~~ in URL hinterlegt ist.
 
 \begin{pspicture}(4,4)
 \psbarcode[linecolor=blue]{`{r} params$url`}{includetext}{qrcode}
@@ -56,7 +58,7 @@ Aktuell wird der Parameter in r ausgegegeben und in der Latex Umgebung dem Befeh
 \end{pspicture} 
 ```
 
-## Lore Ipsum
+# Lore Ipsum
 
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   

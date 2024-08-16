@@ -18,16 +18,26 @@ format:
   pdf: 
     documentclass: scrartcl
     classoption: 
+      - headlines=2.1
       - landscape
       - twocolumn
+      - twoside=false
       - a4paper
     colorlinks: true
+    toc: true
+    lof: true
+    lot: true
+    lang: de
     pdf-enginge: pdflatex
     header-includes:
       - \usepackage{pst-barcode} 
-      - \usepackage[babel, german=quotes]{csquotes}
+      - \usepackage{csquotes}
     keep-tex: true
     template: reporting.tex
+    include-in-header:
+      text: | 
+        \lstset{basicstyle=\small,numberstyle=\tiny,numbersep=-1pt,breaklines=true,frame=single,numbers=right}
+
     
 website:
   back-to-top-navigation: true

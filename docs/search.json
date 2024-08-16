@@ -4,14 +4,14 @@
     "href": "sowiaaron.github.io.html",
     "title": "sowiaaron.github.io",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n\n\n\n\n\nEin Quellcode unterschiedliche Formate\n\n\n\n\n\nAus der gleichen Datei wird die PDF und die HTML Version erzeugt.\nDer Parameter URL wird im YML Header dieses Dokuments mit dem Titel sowiaaron.github.io\ngesetzt. Und kann nun z. B. in R Syntax verwandt werden.\n\n\nCode\nparams$url\n\n\n[1] \"sowiaaron.github.com\"\n\n\nAuch sollte über ?meta:param.url hier ?meta:param.url die Url stehen. Was aber so offensichtlich nicht funktioniert.\nDieser Text ist nur in der HTML Version zu sehen. In der PDF Variante wird die URL als QR Code an dieser Stelle eingefügt."
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n\n\n\n\n\nEin Quellcode unterschiedliche Formate\n\n\n\n\n\nAus der gleichen Datei wird die PDF und die HTML Version erzeugt.\nDer Parameter URL wird im YML Header dieses Dokuments mit dem Titel sowiaaron.github.io\ngesetzt. Und kann nun z. B. in R Syntax verwandt werden.\n\n\nCode\nparams$url\n\n\n[1] \"sowiaaron.github.com\"\n\n\nAuch sollte über sowiaaron.github.com hier sowiaaron.github.com die Url stehen. Was nach der Korrektur des Tippfehlser auch klappt.\nDieser Text ist nur in der HTML Version zu sehen. In der PDF Variante wird die URL als QR Code an dieser Stelle eingefügt."
   },
   {
     "objectID": "sowiaaron.github.io.html#quarto",
     "href": "sowiaaron.github.io.html#quarto",
     "title": "sowiaaron.github.io",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n\n\n\n\n\nEin Quellcode unterschiedliche Formate\n\n\n\n\n\nAus der gleichen Datei wird die PDF und die HTML Version erzeugt.\nDer Parameter URL wird im YML Header dieses Dokuments mit dem Titel sowiaaron.github.io\ngesetzt. Und kann nun z. B. in R Syntax verwandt werden.\n\n\nCode\nparams$url\n\n\n[1] \"sowiaaron.github.com\"\n\n\nAuch sollte über ?meta:param.url hier ?meta:param.url die Url stehen. Was aber so offensichtlich nicht funktioniert.\nDieser Text ist nur in der HTML Version zu sehen. In der PDF Variante wird die URL als QR Code an dieser Stelle eingefügt."
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n\n\n\n\n\nEin Quellcode unterschiedliche Formate\n\n\n\n\n\nAus der gleichen Datei wird die PDF und die HTML Version erzeugt.\nDer Parameter URL wird im YML Header dieses Dokuments mit dem Titel sowiaaron.github.io\ngesetzt. Und kann nun z. B. in R Syntax verwandt werden.\n\n\nCode\nparams$url\n\n\n[1] \"sowiaaron.github.com\"\n\n\nAuch sollte über sowiaaron.github.com hier sowiaaron.github.com die Url stehen. Was nach der Korrektur des Tippfehlser auch klappt.\nDieser Text ist nur in der HTML Version zu sehen. In der PDF Variante wird die URL als QR Code an dieser Stelle eingefügt."
   },
   {
     "objectID": "sowiaaron.github.io.html#lore-ipsum",

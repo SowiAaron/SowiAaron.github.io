@@ -22,7 +22,7 @@ gesetzt. Und kann nun z. B. in R Syntax verwandt werden.
 params$url
 ```
 
-Auch sollte über `{{< meta param.url >}}` hier {{< meta param.url >}} die Url stehen. Was aber so offensichtlich nicht funktioniert.
+Auch sollte über `{{< meta params.url >}}` hier {{< meta params.url >}} die Url stehen. Was nach der Korrektur des Tippfehlers auch klappt.
 
 
 ::: {.content-visible when-format="html"}
@@ -34,7 +34,7 @@ Dieser Text ist nur in der PDF Version zu sehen und verweist auf die Webseite.
 Der QR Code auf dieser Seite zeigt aktuell noch statisch auf meine Webseite und soll in Zukunft auf die Webseite zum jeweiligen Report oder Buch verweisen.
 
 \begin{pspicture}(4,4)
-\psbarcode[linecolor=blue]{sowiaaron.github.io}{includetext}{qrcode}
+\psbarcode[linecolor=blue]{`{r} params$url`}{includetext}{qrcode}
 \end{pspicture}
 :::
 
